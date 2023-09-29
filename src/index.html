@@ -4,38 +4,39 @@
 <head>
   <meta charset="utf-8">
   <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
+  
+  <div title="fondo"></div>
   <header>
-    <h1>Analizador de texto</h1>
+    <h1>Text Analyzer</h1>
   </header>
 
   <label name="user-input"></label>
   <textarea autofocus cols="40" rows="10" name="user-input" title="Escribe tú texto" placeholder="Escribe tú texto"></textarea>
 
-  <button input="reset-button" id="reset-button" title="limpiar">limpiar</button>
-
   <ul>
-    <li data-testid="word-count">Cantidad de palabras</li>
+    <li class="listas" data-testid="word-count" title="Cantidad de palabras">Cantidad de palabras</li>
     <br>
-    <li data-testid="character-count">Cantidad de caracteres</li>
+    <li class="listas" data-testid="character-count" title="Cantidad de caracteres">Cantidad de caracteres</li>
     <br>
-    <li data-testid="character-no-spaces-count">Cantidad de caracteres sin espacios</li>
+    <li class="listas" data-testid="character-no-spaces-count" title="Cantidad de caracteres sin espacios">Cantidad de caracteres sin espacios</li>
     <br>
-    <li data-testid="number-count">Cantidad de números</li>
+    <li class="listas" data-testid="number-count" title="Cantidad de números">Cantidad de números</li>
     <br>
-    <li data-testid="number-sum">Suma de números</li>
+    <li class="listas" data-testid="number-sum" title="Suma de números">Suma de números</li>
     <br>
-    <li data-testid="word-length-average">Longitud media de palabras</li>
-
+    <li class="listas" data-testid="word-length-average" title="Longitud media de palabras">Longitud media de palabras</li>
   </ul>
-
+  
+  <button id="reset-button" title="Boton de limpiar">Limpiar</button>
+  
   <footer>
     <p>Rosa Milet Sarmiento</p>
   </footer>
-  <script src="index.js" type="module"></script>
+  <script src="./index.js" type="module"></script>
 </body>
 
 </html>
