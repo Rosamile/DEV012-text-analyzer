@@ -1,4 +1,14 @@
+* { margin: 0;
+
+}
+
 .background {
     background-color: blue;
     
+}
+
+.textarea {
+    border-color: aqua;
+    border: 2px
+
 }
