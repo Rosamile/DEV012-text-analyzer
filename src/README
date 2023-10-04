@@ -1,0 +1,74 @@
+ # Text Analyzer
+        ## Presentación 
+       Desarrollar una herramienta digital que permita a los usuarios obtener métricas detalladas y un análisis profundo del contenido de un texto ingresado.
+       
+        # Funcionalidades y Características:
+
+       - Ingreso de Texto:
+        Proporcionar un campo interactivo donde los usuarios puedan escribir o pegar un fragmento de texto que deseen analizar.
+
+      -  Cantidad de Caracteres:
+        Tras ingresar el texto, el sistema deberá contar y mostrar el número total de caracteres presentes.
+
+       - Cantidad de Palabras:
+        El sistema identificará y contará el total de palabras en el texto.
+
+       - Cantidad de Caracteres (Excluyendo Espacios y Caracteres Especiales):
+        Esta métrica se enfocará en contar únicamente letras y números, excluyendo espacios, signos de puntuación y otros caracteres especiales.
+
+        -Longitud Promedio de las Palabras:
+        El sistema calculará la longitud promedio de las palabras presentes en el texto, proporcionando una idea de la complejidad o simplicidad del contenido.
+
+       - Identificación y Cantidad de Números:
+        La herramienta identificará todos los números presentes, ya sean enteros o decimales, y mostrará la cantidad total de números identificados.
+
+        - Suma de los Números:
+        Si el texto contiene números, el sistema sumará estos valores y presentará el resultado al usuario.
+                
+                ## Guía de Inicio 
+        
+        ### Requisitos de Instalación. 
+       siendo una herramienta en línea, no necesitarás instalar software en tu computadora. Sin embargo, para acceder y usar la herramienta adecuadamente, sigue los siguientes pasos:
+
+        1. Requisitos previos:
+        Asegúrate de tener un navegador web actualizado (como Google Chrome, Mozilla Firefox, Safari, Microsoft Edge).
+       
+        2. Acceso a la Herramienta:
+        Abre tu navegador web.
+        Ingresa la URL o dirección web de la herramienta de análisis de texto en la barra de direcciones y presiona 'Enter'.
+        
+      ### Conocimientos Requeridos para el Uso del Analizador de Texto en Línea
+
+            -1. Navegación Básica en Internet:
+            Saber cómo acceder a una página web a través de un navegador.
+            Familiaridad con el ingreso de URLs y el uso de motores de búsqueda para encontrar la herramienta.
+            
+            -2. Ingreso y Manipulación de Texto:
+            Capacidad para escribir, copiar y pegar texto dentro de campos de entrada en una página web.
+            Familiaridad con la selección de texto usando el mouse o combinaciones de teclas.
+          
+            -3. Interpretación de Resultados:
+            Capacidad para comprender y interpretar números y métricas. Por ejemplo, entender qué significa "longitud promedio de las palabras".
+            Habilidad para diferenciar entre distintos tipos de métricas presentadas, como "cantidad de caracteres" versus "cantidad de caracteres excluyendo espacios".
+           
+            -4. Conceptos Básicos de Texto y Gramática:
+            Entender lo que constituye una "palabra" en el contexto lingüístico.
+            Familiaridad con términos como "caracteres", "espacios", "números", y "caracteres especiales".
+            
+            -5. Uso Básico de Herramientas Digitales:
+            Familiaridad con interfaces de usuario típicas, como botones, campos de texto y áreas de resultados.
+            Capacidad para seguir instrucciones simples en pantalla y responder a indicaciones o mensajes de error.
+            
+            -6. Conocimientos Matemáticos Básicos (opcional pero útil):
+            Aunque la herramienta realizará todos los cálculos, tener un entendimiento básico de conceptos como promedios puede ayudar a una comprensión más profunda de los resultados.
+            En general, la mayoría de los usuarios con experiencia básica en navegación por Internet y uso de aplicaciones en línea deberían poder usar esta herramienta sin problemas. Sin embargo, una comprensión más detallada de los conceptos mencionados anteriormente permitirá una experiencia más enriquecedora y un mejor aprovechamiento de los resultados generados por el analizador.
+
+        Pruebas aplicadas
+        npm run test:oas-html
+        npm run test:oas-css
+        npm run test:oas-web-api
+        npm run test:oas-js
+        Pruebas end-to-end
+
+        # Aspectos pendientes de mejora. 
+        Metricas en cero al momento de borrar el contenido del campo de texto.
