@@ -1,27 +1,26 @@
-import { types } from '@babel/core';
-import analyzer from './analyzer.js';
+import analyzer from './analyzer.js'; //127.0.0.1:3000/src/index.html
 
-//TODO: escuchar eventos del DOM e invocar  los métodos del objeto `analyzer`
+const textarea = document.querySelector('textarea[name="user-input"]');
+const resetbutton = document.getElementById('reset-button');
 
-//let userInput = "texTarea";
-//console.log ("textTarea")
+resetbutton.addEventListener('click', () => {
+  textarea.value ='';
+  document.querySelector('[data-testid="word-count"]').innerHTML = 'Cantidad de palabras: ' + 0 ;
+  document.querySelector('[data-testid="character-count"]').innerHTML = 'Cantidad de caracteres: ' + 0;
+  document.querySelector('[data-testid="character-no-spaces-count"]').innerHTML = 'Cantidad de caracteres sin espacios: ' + 0;
+  document.querySelector('[data-testid="word-length-average"]').innerHTML = 'Longitud media de palabras: ' + 0;
+  document.querySelector('[data-testid="number-count"]').innerHTML = 'Cantidad de números: ' + 0;
+  document.querySelector('[data-testid="number-sum"]').innerHTML = 'Suma de números: ' + 0;
+});
 
-//let wordCount = wordCount > 0 ;
-
-//function limpiar () {console.log (borrar)}
-//$resetButton.onclick = "limpiar ()";
-
-//formula evento semantico 
-
-(function limpiar (){
-    let userInput = document.getElementById("user-input");
-        resetButton.onclick("click", function () {
-        userInput.value = "";
-        })});
-
-//let characterCount ="userInput"
-//let characterNoSpaces = "userInput"
-//let numberCount = "userInput"
-//let numberSum = "userInput"
-//let wordLengthAverage = "userInput"   
-
+//Cuando se ejecute el evento input, se ejecutaran las funciones del analyzer
+function contador1() {
+  const text = textarea.value
+  document.querySelector('[data-testid="word-count"]').innerHTML = 'Cantidad de palabras: ' + analyzer.getWordCount(text);
+  document.querySelector('[data-testid="character-count"]').innerHTML = 'Cantidad de caracteres: ' + analyzer.getCharacterCount(text);
+  document.querySelector('[data-testid="character-no-spaces-count"]').innerHTML = 'Cantidad de caracteres sin espacios: ' + analyzer.getCharacterCountExcludingSpaces(text);
+  document.querySelector('[data-testid="word-length-average"]').innerHTML = 'Longitud media de palabras: ' + analyzer.getAverageWordLength(text);
+  document.querySelector('[data-testid="number-count"]').innerHTML = 'Cantidad de números: ' + analyzer.getNumberCount(text);
+  document.querySelector('[data-testid="number-sum"]').innerHTML = 'Suma de números: ' + analyzer.getNumberSum(text);
+}
+textarea.addEventListener('input', contador1);
